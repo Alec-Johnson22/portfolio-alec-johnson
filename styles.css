@@ -1,0 +1,18 @@
+/* CSS by Alec Johnson */
+
+/* Color Pallette 
+------------------------
+Burnt Orange: #AD5228
+Soft Teal: #608775
+Tan: #E7DEC2
+Medium Brown: #8A836B
+Dark Brown: #211D17
+------------------------
+*/
+
+/* Global (Base) Styles - MOBILE FIRST */
+
+body {
+	background-color: #211D17;
+	color: #E7DEC2;
+}

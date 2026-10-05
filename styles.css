@@ -15,4 +15,79 @@ Dark Brown: #211D17
 body {
 	background-color: #211D17;
 	color: #E7DEC2;
+	display: grid;
+	grid-template-areas: 1fr;
+	min-width: 500px;
+	border-bottom: 2px solid #AD5228;
+}
+
+header {
+	grid-column: 1 / -1;
+	color: #211D17;
+	background-color: #8A836B;
+	text-align: center;
+	padding: 1rem;
+	border-bottom: 2px solid #AD5228;
+	margin-bottom: .25rem;
+}
+
+nav {
+	grid-column: 1 / -1;
+	background-color: #608775;
+	border-bottom: 2px solid #AD5228;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 1rem;
+	padding: .5rem;
+}
+
+nav a {
+	background-color: #211D17;
+	color: #E7DEC2;
+	text-decoration: none;
+	padding: .75rem;
+	display: block;
+	border-left: 5px solid #AD5228;
+	margin: 1rem;
+}
+
+nav a:hover {
+	background-color: #AD5228;
+	color: #E7DEC2;
+}
+
+footer {
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+
+
+
+/* ===== Media Query (Medium) ===== */
+@media screen and (min-width: 600px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header, nav, footer {
+        grid-column: 1 / -1;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-row {
+        display: flex;
+    }
+
+    .card-row section {
+        width: 30%;
+    }
 }

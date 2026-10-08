@@ -52,7 +52,7 @@ nav a {
 	text-decoration: none;
 	padding: .75rem;
 	display: block;
-	border-left: 5px solid #AD5228;
+	border-left: 6px solid #AD5228;
 	margin: 1rem;
 }
 
@@ -65,7 +65,18 @@ main {
 	flex: 1;
 }
 
+.bio {
+	justify-content: center;
+	align-content: center;
+	color: #E7DEC2;
+	margin: 2rem;
+	padding: 1rem;
+}
+
 .contact-info {
+	justify-content: center;
+	align-content: center;
+	color: #E7DEC2;
 	margin: 2rem;
 	padding: 1rem;
 }
@@ -75,12 +86,25 @@ main {
 }
 
 .contact-info p {
+	color: #E7DEC2;
 	margin-bottom: 2.25rem;
+}
+
+.contact-info a {
+	color: #E7DEC2;
+	text-decoration: none;
+	border: 1px solid #AD5228;
+	padding: .5rem;
+}
+
+.contact-info a:hover {
+	background-color: #AD5228;
+	color: #E7DEC2;
 }
 
 .card-row {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	width: 100%;
 	justify-content: center;
 	align-content: center;
@@ -121,6 +145,14 @@ footer {
 	text-align: center;
 }
 
+footer a {
+	color: #E7DEC2;
+	text-decoration: underline;
+}
+
+footer p {
+	margin-bottom: 1.25rem;
+}
 
 
 

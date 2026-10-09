@@ -20,6 +20,7 @@ body {
 	border-bottom: 2px solid #AD5228;
 	margin: 0;
 	padding: 0;
+	font-family: "Courier New", Courier, monospace;
 }
 
 header {
@@ -30,6 +31,10 @@ header {
 	padding: 1rem;
 	border-bottom: 2px solid #AD5228;
 	margin-bottom: .25rem;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
 }
 
 nav {
@@ -42,7 +47,7 @@ nav ul {
 	display: flex;
 	justify-content: space-evenly;
 	list-style: none;
-	margin: 1rem;
+	margin: .5rem;
 	padding: .5rem;
 }
 
@@ -52,7 +57,7 @@ nav a {
 	text-decoration: none;
 	padding: .75rem;
 	display: block;
-	border-left: 6px solid #AD5228;
+	border-left: 7px solid #AD5228;
 	margin: 1rem;
 }
 
@@ -65,6 +70,16 @@ main {
 	flex: 1;
 }
 
+.welcome {
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	color: #E7DEC2;
+	margin: 3rem;
+	padding: 1rem;
+	grid-column: 1 / -1;
+}
+
 .bio {
 	justify-content: center;
 	align-content: center;
@@ -73,11 +88,15 @@ main {
 	padding: 1rem;
 }
 
+.wedding-photo {
+	margin: 2rem;
+}
+
 .contact-info {
 	justify-content: center;
 	align-content: center;
 	color: #E7DEC2;
-	margin: 2rem;
+	margin: 5rem;
 	padding: 1rem;
 }
 
@@ -127,18 +146,11 @@ main {
 	text-decoration: underline;
 }
 
-/*
-.sidebar-image {
-	width: 100%;
-	margin: 0;
-}
 
-.sidebar-image img {
-	width: 100%;
-	height: auto;
-	display: block;
+aside {
+	justify-content: center;
+	margin: .5rem;
 }
-*/
 
 footer {
 	grid-column: 1 / -1;
@@ -170,6 +182,11 @@ footer p {
         display: flex;
         justify-content: space-evenly;
     }
+
+	main {
+		grid-column: 1 / -1;
+	}
+
 }
 
 /* ===== Media Query (Large) ===== */
@@ -187,7 +204,11 @@ footer p {
         justify-content: space-evenly;
     }
 
-	main {
-		grid-column: 1 / -1;
+	.bio{
+		grid-column: 1 / 3;
+	}
+
+	.wedding-photo {
+		grid-column: 3 / 4;
 	}
 }
